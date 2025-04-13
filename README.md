@@ -33,11 +33,11 @@ pnpm add tiny-deep-merge
 ```
 import { merge } from "tiny-deep-merge";
 
-const a = { user: { name: "John", age: 30 } };
+const a = { user: { name: "Jess", age: 25 } };
 const b = { user: { age: 31, active: true } };
 
 const result = merge(a, b);
-// => { user: { name: "John", age: 31, active: true } }
+// => { user: { name: "Jess", age: 26, active: true } }
 ```
 
 ## ✅ Multi-object merge
