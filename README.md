@@ -89,8 +89,6 @@ No need for generics. No need for type gymnastics. It just works.
 
 ## 🤨 What this does not do
 
-So we’re clear:
-
 ❌ No array: "concat" — arrays are overwritten.
 
 ❌ No merging of class instances, Maps, Sets, Dates.
