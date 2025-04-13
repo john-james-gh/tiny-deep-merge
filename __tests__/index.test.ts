@@ -7,11 +7,11 @@ test("merges flat objects", () => {
 })
 
 test("merges nested objects deeply", () => {
-  const a = { user: { name: "John", age: 30 } }
+  const a = { user: { name: "Jess", age: 25 } }
   const b = { user: { age: 31, active: true } }
 
   const result = merge(a, b)
-  expect(result).toEqual({ user: { name: "John", age: 31, active: true } })
+  expect(result).toEqual({ user: { name: "Jess", age: 31, active: true } })
 })
 
 test("overwrites arrays by default", () => {

@@ -37,7 +37,7 @@ const a = { user: { name: "Jess", age: 25 } };
 const b = { user: { age: 31, active: true } };
 
 const result = merge(a, b);
-// => { user: { name: "Jess", age: 26, active: true } }
+// => { user: { name: "Jess", age: 31, active: true } }
 ```
 
 ## ✅ Multi-object merge
