@@ -102,6 +102,7 @@
     "dts": true,
     "clean": true,
     "sourcemap": true,
+    "minify": true,
     "ignore": [
       "__tests__/**"
     ]
