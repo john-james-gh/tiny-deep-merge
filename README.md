@@ -11,7 +11,7 @@
 - Deep merge of nested plain objects
 - Merges any number of inputs
 - Arrays and primitives are **overwritten** by default
-- Zero dependencies (413 B minified and gzipped, compared to 723 B for `deepmerge`)
+- Zero dependencies (404 B minified and gzipped, compared to 723 B for `deepmerge`)
 - Fully type-safe (TypeScript inference preserved)
 - Does **not** mutate source objects
 
@@ -88,4 +88,4 @@ const merged = merge({ id: 1 }, { name: "Alice" }, { profile: { age: 25 } })
 
 ## 📄 License
 
-MIT
+MIT @ John James
