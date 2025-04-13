@@ -1,7 +1,7 @@
 {
   "name": "tiny-deep-merge",
-  "version": "1.0.5",
-  "description": "A tiny utility to deeply merge multiple plain objects. Arrays are overwritten. Zero dependencies.",
+  "version": "1.0.6",
+  "description": "A utility to deeply merge multiple plain objects. Zero dependencies.",
   "keywords": [
     "merge",
     "deep merge",
