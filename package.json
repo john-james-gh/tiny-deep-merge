@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/john-james-gh/tiny-deep-merge.git"
+    "url": "git+https://github.com/john-james-gh/tiny-deep-merge.git"
   },
   "license": "MIT",
   "author": "John James",
