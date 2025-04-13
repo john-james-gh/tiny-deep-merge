@@ -5,14 +5,39 @@
   "keywords": [
     "merge",
     "deep merge",
+    "deepmerge",
+    "object merge",
     "typescript",
     "utility",
     "object",
     "tiny",
-    "esm"
+    "lightweight",
+    "fast",
+    "zero dependency",
+    "esm",
+    "cjs",
+    "js",
+    "ts",
+    "minimal",
+    "lite"
   ],
+  "homepage": "https://github.com/john-james-gh/tiny-deep-merge#readme",
+  "bugs": {
+    "url": "https://github.com/john-james-gh/tiny-deep-merge/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/john-james-gh/tiny-deep-merge.git"
+  },
   "license": "MIT",
   "author": "John James",
+  "contributors": [
+    {
+      "name": "John James",
+      "url": "https://github.com/john-james-gh"
+    }
+  ],
+  "sideEffects": false,
   "exports": {
     ".": {
       "import": "./dist/index.js",
