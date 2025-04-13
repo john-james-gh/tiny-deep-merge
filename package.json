@@ -1,6 +1,6 @@
 {
   "name": "tiny-deep-merge",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A utility to deeply merge multiple plain objects. Zero dependencies.",
   "keywords": [
     "merge",
