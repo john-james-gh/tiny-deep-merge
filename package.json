@@ -1,0 +1,74 @@
+{
+  "name": "tiny-deep-merge",
+  "version": "1.0.0",
+  "description": "A tiny utility to deeply merge multiple plain objects. Arrays are overwritten. Zero dependencies.",
+  "keywords": [
+    "merge",
+    "deep merge",
+    "typescript",
+    "utility",
+    "object",
+    "tiny",
+    "esm"
+  ],
+  "license": "MIT",
+  "author": "John James",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "format": "prettier --write .",
+    "lint": "eslint . --fix",
+    "size": "size-limit",
+    "sort": "sort-package-json",
+    "test": "vitest"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@size-limit/preset-small-lib": "^11.2.0",
+    "@tsconfig/recommended": "^1.0.8",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.2",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "size-limit": "^11.2.0",
+    "sort-package-json": "^3.0.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.1",
+    "vitest": "^3.1.1"
+  },
+  "packageManager": "pnpm@10.8.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "size-limit": [
+    {
+      "path": "dist/index.js",
+      "limit": "1.5 KB"
+    }
+  ],
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "dts": true,
+    "clean": true,
+    "sourcemap": true
+  }
+}
