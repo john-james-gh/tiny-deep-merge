@@ -1,6 +1,6 @@
 {
   "name": "tiny-deep-merge",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A tiny utility to deeply merge multiple plain objects. Arrays are overwritten. Zero dependencies.",
   "keywords": [
     "merge",
@@ -51,10 +51,11 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "format": "prettier --write .",
-    "lint": "eslint . --fix",
+    "lint": "eslint .",
     "size": "size-limit",
     "sort": "sort-package-json",
-    "test": "vitest"
+    "test": "vitest",
+    "type-check": "tsc --noEmit"
   },
   "prettier": {
     "semi": false
@@ -94,6 +95,9 @@
     ],
     "dts": true,
     "clean": true,
-    "sourcemap": true
+    "sourcemap": true,
+    "ignore": [
+      "__tests__/**"
+    ]
   }
 }
