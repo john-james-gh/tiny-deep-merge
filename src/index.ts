@@ -6,9 +6,7 @@
  * Determines whether a value is a plain object.
  * Excludes arrays, null, class instances, etc.
  */
-export function is_plain_object(
-  value: unknown,
-): value is Record<string, unknown> {
+function is_plain_object(value: unknown): value is Record<string, unknown> {
   return (
     typeof value === "object" &&
     value !== null &&
@@ -68,9 +66,11 @@ type MergeResult<T extends object[]> = T extends [infer First, ...infer Rest]
  * @param objects - List of plain objects to merge
  * @returns A new object representing the deeply merged result
  */
-export function merge<T extends object[]>(...objects: T): MergeResult<T> {
+function merge<T extends object[]>(...objects: T): MergeResult<T> {
   return objects.reduce(
     (acc, curr) => merge_two(acc, curr),
     {},
   ) as MergeResult<T>
 }
+
+export { merge }
