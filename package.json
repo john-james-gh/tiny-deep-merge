@@ -54,7 +54,8 @@
     "lint": "eslint . --fix",
     "size": "size-limit",
     "sort": "sort-package-json",
-    "test": "vitest"
+    "test": "vitest",
+    "type-check": "tsc --noEmit"
   },
   "prettier": {
     "semi": false
@@ -94,6 +95,9 @@
     ],
     "dts": true,
     "clean": true,
-    "sourcemap": true
+    "sourcemap": true,
+    "ignore": [
+      "__tests__/**"
+    ]
   }
 }
